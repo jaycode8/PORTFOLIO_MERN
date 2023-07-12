@@ -1,0 +1,79 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap");
+
+@font-face {
+    font-family: "box";
+    src: url("./fonts/Box-v5.02.ttf");
+}
+@font-face {
+    font-family: "righteous";
+    src: url("./fonts/Righteous-Regular.ttf.otf");
+}
+
+:root {
+    --Ucolor: #2ad883;
+    --Cardbg: #171c22;
+    --bgColor: #202725;
+    --aboutBg: #20272f;
+    --fontColor: #808080;
+    --textFont: "box";
+    --logoText: "righteous";
+}
+* {
+    /* font-family: var(--textFont); */
+    font-family: "Roboto", sans-serif;
+}
+.main {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    background: var(--bgColor);
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0.3rem;
+}
+::-webkit-scrollbar-track {
+    background: var(--Cardbg);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--Ucolor);
+    border-radius: 2rem;
+}
+
+.moveUp {
+    text-decoration: none;
+    width: 40px !important;
+    aspect-ratio: 1;
+    border: 1px solid var(--Ucolor);
+    color: #fff !important;
+    background: transparent;
+    position: sticky;
+    top: 75%;
+    left: 98%;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+}
+.moveUp .arrowUp {
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 500px) {
+    ::-webkit-scrollbar {
+        width: 0.2rem;
+    }
+    .moveUp {
+        width: 30px !important;
+        left: 94% !important;
+        top: 80% !important;
+        z-index: 100;
+    }
+    .moveUp .arrowUp {
+        font-size: 1.2rem;
+    }
+}
