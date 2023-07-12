@@ -132,14 +132,14 @@
         gap: 2rem;
     }
     .langContainer .circularBar {
-        max-width: 8rem;
-        width: 8rem;
-        height: 8rem;
+        max-width: 9rem;
+        width: 9rem;
+        height: 9rem;
     }
     .circularBar .percent,
     .circularBar .percent svg {
-        width: 119px;
-        height: 119px;
+        width: 109px;
+        height: 109px;
     }
     .circularBar .percent svg circle {
         width: 100%;
@@ -168,3 +168,4 @@
         font-size: 1.9rem;
     }
 }
+

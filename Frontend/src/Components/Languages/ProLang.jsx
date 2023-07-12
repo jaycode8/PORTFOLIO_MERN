@@ -31,7 +31,7 @@ const ProLang = () => {
     return (
         <div className="languages" id="skills">
             <h3>
-                Skills and technologies
+                Skills
             </h3>
             <div className="langContainer">
                 {

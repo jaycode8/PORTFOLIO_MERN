@@ -119,7 +119,7 @@ span .button:hover {
         gap: 2.5rem;
     }
     .proDescription {
-        padding: 0.1rem 1rem;
+        padding: 0.1rem .7rem;
         margin-top: 2rem;
     }
     .proDescription h4 {
@@ -127,6 +127,7 @@ span .button:hover {
     }
     .projectCards .project{
         height: 33rem;
+        width: 19.5rem;
     }
 }
 
