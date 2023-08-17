@@ -98,7 +98,7 @@ router.delete('/language/:id', async (req, res) => {
 
 // =============================================== Projects ========================================================
 
-// router.post('/project1', upload.single('projectPhoto'), async (req, res, next) => {
+// router.post('/project', upload.single('projectPhoto'), async (req, res, next) => {
 //     try {
 //         const projectName = req.body.projectName;
 //         const title = req.body.title;
@@ -111,26 +111,7 @@ router.delete('/language/:id', async (req, res) => {
 //         technology = technology.split(',').map((ele) => ele.trim());
 //         const projectData = { projectName, title, description, technology, linkto, year, bgImg };
 //         const filePath = req.file.path;
-//         const fileName = req.file.originalname;
-//         const token = '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';
-//         const repoOwner = 'jaycode8';
-//         const repoName = 'portfolio_files';
-//         const branchName = 'main';
-//         const fileData = fs.readFileSync(filePath);
-//         const base64Data = fileData.toString('base64');
-
-//         const createFileResponse = await axios.post(`https://api.github.com/repos/${repoOwner}/${repoName}/contents/${fileName}`, {
-//             message: 'Upload image',
-//             content: base64Data,
-//             branch: branchName,
-//         }, {
-//             headers: {
-//                 Authorization: `Bearer ${token}`,
-//             },
-//         });
-
-//         console.log('Image uploaded successfully');
-//         console.log('GitHub response:', createFileResponse.data);
+//         const fileName = req.file.originalname;      
 //         console.log(projectData)
 //         res.json({"data":projectData, "file":req.file, message:"file uploaded successfully"})
 //     } catch (error) {
@@ -178,7 +159,6 @@ router.post('/project', upload.single('projectPhoto'), async (req, res, next) =>
         }
     } catch (error) {
         res.json({ success: 'false', message: 'Encounter fatal error' });
-        console.log(error);
     }
 });
 
