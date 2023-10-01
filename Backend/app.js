@@ -10,7 +10,11 @@ const path = require('path');
 const app = express();
 app.use(express.json())
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cors());
+app.use(cors({
+    origin: "https://jay-admin-4174.web.app",
+    methods: "GET, HEAD, PUT, PATCH, POST, DELETE",
+    Credential: true,
+}));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 
