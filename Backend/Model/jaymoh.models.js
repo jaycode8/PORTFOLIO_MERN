@@ -41,8 +41,14 @@ const projectsSchema = new mongoose.Schema({
         required: true
     },
     bgImg: {
-        type: String,
-        required: true
+        imgUrl : {
+            type : String,
+            required: true
+        },
+        publicId:{
+            type: String,
+            required: true
+        }
     }
 }, { timestamps: true });
 

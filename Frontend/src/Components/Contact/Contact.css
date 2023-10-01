@@ -57,11 +57,11 @@
     box-shadow: 0 0 5px #fff;
     background: transparent;
     color: #ccc;
-    font-family: "Merienda";
+    /* font-family: "Merienda"; */
 }
 .emailForm form input::placeholder {
     color: #ccc;
-    font-family: "Merienda";
+    /* font-family: "Merienda"; */
 }
 .emailForm form input:focus {
     background: transparent;
@@ -80,10 +80,10 @@
     box-shadow: 0 0 4px #fff;
     color: #ccc;
     background: transparent;
-    font-family: "Merienda";
+    /* font-family: "Merienda"; */
 }
 .emailForm form textarea::placeholder {
-    font-family: "Merienda";
+    /* font-family: "Merienda"; */
     color: #ccc;
 }
 .emailForm form button {

@@ -23,7 +23,7 @@ const Projects = () => {
         fetchProjects();
     }, []);
 
-    const sortedProjects = [...projects].sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
+    const sortedProjects = [...projects].sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
 
     return (
         <div className="projectsContainer" id='projectsPage'>
@@ -35,7 +35,7 @@ const Projects = () => {
                     sortedProjects.map((project, i) =>
                         <div className="project" key={project._id}>
                             <div className="projectPhoto">
-                                <img src={`${api_url}/uploads/${project.bgImg}`} alt={project.projectName} />
+                                <img src={project.bgImg.imgUrl} alt={project.projectName} />
                             </div>
                             <div className="proDescription">
                                 <h4>{project.projectName} | {project.title}</h4>
