@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json())
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors({
-    origin: "https://jay-admin-4174.web.app",
+    origin: "*",
     methods: "GET, HEAD, PUT, PATCH, POST, DELETE",
     Credential: true,
 }));
