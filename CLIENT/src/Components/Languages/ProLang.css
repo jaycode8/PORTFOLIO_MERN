@@ -1,0 +1,182 @@
+.languages {
+  width: 100%;
+  display: grid;
+  position: relative;
+  place-items: center;
+  padding: 3rem 1rem 1rem 1rem;
+}
+.languages h3 {
+  font-size: 2rem;
+  color: #fff;
+}
+.langContainer {
+  width: 60rem;
+  display: grid;
+  place-items: center;
+  gap: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  margin-top: 3%;
+  padding-inline: 1rem;
+}
+.langContainer .circularBar {
+  max-width: 10rem;
+  width: 10rem;
+  height: 10rem;
+  display: grid;
+  place-items: center;
+  background: transparent;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.langContainer .circularBar:hover {
+  box-shadow:
+    0 0 5px var(--clr),
+    0 0 80px var(--clr);
+}
+.circularBar .percent {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+.circularBar .percent svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  transform: rotate(270deg);
+}
+.circularBar .percent svg circle {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+  stroke-width: 2;
+  stroke: #191919;
+  transform: translate(5px, 5px);
+}
+.circularBar .percent svg circle:nth-child(2) {
+  stroke: var(--clr);
+  stroke-dasharray: 440;
+  opacity: 0;
+  stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+  animation: fadeIn 1s linear forwards;
+  animation-delay: 2s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.dot {
+  position: absolute;
+  inset: 5px;
+  z-index: 10;
+  animation: animdot 2s linear forwards;
+}
+@keyframes animdot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(calc(3.6deg * var(--num)));
+  }
+}
+.dot::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background: var(--clr);
+  border-radius: 50%;
+  box-shadow:
+    0 0 10px var(--clr),
+    0 0 30px var(--clr);
+}
+.number {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  animation: fadeIn 1s linear forwards;
+  animation-delay: 2s;
+  color: #fff;
+}
+.number h2 {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.number h2 i {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+.number p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 40em) {
+  .langContainer {
+    grid-template-columns: repeat(auto-fit, minmax(6.2rem, 1fr));
+    gap: 2rem;
+  }
+  .langContainer .circularBar {
+    max-width: 9rem;
+    width: 9rem;
+    height: 9rem;
+  }
+  .circularBar .percent,
+  .circularBar .percent svg {
+    width: 109px;
+    height: 109px;
+  }
+  .circularBar .percent svg circle {
+    width: 100%;
+    height: 100%;
+  }
+  .circularBar .percent svg circle:nth-child(2) {
+    stroke-dasharray: 320;
+    stroke-dashoffset: calc(320 - (320 * var(--num)) / 100);
+  }
+  .number h2 {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  .number h2 i {
+    font-size: 0.7rem;
+  }
+  .number p {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .langContainer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .languages h3 {
+    width: 100%;
+    text-align: left;
+    font-size: 1.9rem;
+    position: relative;
+  }
+  .langContainer {
+    width: 100%;
+  }
+}

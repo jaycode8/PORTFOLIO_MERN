@@ -1,0 +1,188 @@
+.landingPage {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	display: grid;
+	place-items: center;
+	background: var(--aboutBg) var(--landingBg);
+	background-blend-mode: overlay;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.landingPage .landingText {
+	display: grid;
+	place-items: center;
+	gap: 1.5rem;
+	color: #808080;
+}
+.landingText h3 {
+	font-size: 2rem;
+}
+.landingText div {
+	display: grid;
+	grid-auto-flow: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+}
+.landingText div h2 {
+	font-size: 2.7rem;
+}
+.landingText div span {
+	height: 100%;
+	font-size: 2rem;
+	color: #2ad883;
+	font-weight: bolder;
+}
+.landingText h4 {
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	display: grid;
+	place-items: center;
+	grid-auto-flow: column;
+	gap: 0.3rem;
+}
+.landingText h4 span {
+	margin-top: 0;
+	font-family: "righteous" !important;
+	color: red;
+	font-weight: 900;
+}
+.landingText span {
+	display: grid;
+	gap: 2rem;
+	grid-auto-flow: column;
+	margin-top: 0.5rem;
+}
+.landingText span a {
+	text-decoration: none;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+	display: grid;
+	place-items: center;
+	border: 1px solid #2ad883;
+	color: #2ad883;
+	transition: all 0.2s;
+}
+.landingText span .icon {
+	font-size: 1.4rem;
+	cursor: pointer;
+}
+.landingText span a:hover {
+	background: #2ad883;
+	color: #fff !important;
+}
+#arrowUp,
+#arrowUp2 {
+	font-size: 1.5rem;
+	color: #fff;
+	position: absolute;
+	bottom: 3rem;
+	cursor: pointer;
+	animation: bounce 1.2s infinite ease;
+	display: none;
+}
+#arrowUp2 {
+	bottom: 2rem;
+	animation: bounce2 1.2s infinite ease;
+	z-index: 10;
+}
+
+.custom-shape-divider-bottom {
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+	transform: rotate(180deg);
+	z-index: 1;
+}
+
+.custom-shape-divider-bottom svg {
+	position: relative;
+	display: block;
+	width: calc(158% + 1.3px);
+	height: 138px;
+}
+.custom-shape-divider-bottom .shape-fill {
+	fill: var(--aboutBg);
+}
+
+@keyframes bounce {
+	0% {
+		bottom: 5rem;
+		opacity: 0;
+	}
+	50% {
+		bottom: 4rem;
+	}
+	100% {
+		bottom: 3rem;
+		opacity: 1;
+	}
+}
+@keyframes bounce2 {
+	0% {
+		bottom: 5rem;
+		opacity: 0;
+	}
+	50% {
+		bottom: 3rem;
+	}
+	100% {
+		bottom: 2rem;
+		opacity: 1;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.landingPage {
+		background-position: 70% !important;
+		background-size: cover;
+	}
+	.landingText {
+		width: 100%;
+	}
+	.landingText h3 {
+		font-size: 2.1rem !important;
+	}
+	.landingText div h2 {
+		font-size: 1.6rem;
+	}
+	.landingText div span {
+		font-size: 1.3rem;
+	}
+	.landingText h4 {
+		font-size: 1.3rem !important;
+	}
+	.landingText span a {
+		width: 2.5rem;
+		height: 2.5rem;
+	}
+	.landingText span .icon {
+		font-size: 1.2rem;
+	}
+	#arrowDown,
+	#arrowDown2 {
+		font-size: 1.6rem;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.landingText h3 {
+		font-size: 1.3rem;
+	}
+	.landingText h2 {
+		font-size: 1.6rem;
+	}
+	.landingText h4 {
+		font-size: 0.8rem;
+	}
+	.landingText span {
+		gap: 1.5rem;
+	}
+}

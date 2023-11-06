@@ -1,0 +1,57 @@
+.footer {
+	width: 100%;
+	height: auto;
+	padding: 1rem 0;
+	display: flex;
+	flex-direction: column;
+	background-color: #000;
+	border-top: 1px solid #ccc;
+}
+.copyright {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-family: "Merienda" !important;
+	font-size: 1rem;
+}
+.copyright span a {
+	margin: 0%;
+	text-decoration: none !important;
+	transition: all 0.2s ease;
+	font-weight: bolder;
+}
+.copyright span a:hover {
+	color: var(--Ucolor);
+}
+.footer .socials {
+	position: relative;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+.socials .icon {
+	color: var(--Ucolor) !important;
+	margin: 1.5rem 2rem;
+	font-size: 1.8rem;
+}
+
+@media screen and (max-width: 350px) {
+	.footer {
+		height: 20vh;
+		position: relative;
+	}
+	.footer .socials {
+		position: absolute;
+		bottom: 40%;
+	}
+	.copyright {
+		position: absolute;
+		bottom: -25%;
+	}
+}
+

@@ -1,0 +1,236 @@
+.contactPage {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	padding: 3rem 1rem 2rem 1rem;
+}
+.contactPage h3 {
+	cursor: pointer;
+	font-size: 2rem;
+	color: var(--Ucolor);
+	background: var(--maskImage);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.emailContainer {
+	width: 70%;
+	height: 70vh;
+	border-radius: 20px;
+	/* box-shadow: inset 0 0 10px #fff; */
+	box-shadow: rgba(0, 0, 0, 0.56) 0 22px 70px 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+}
+.emailContainer section {
+	width: 50%;
+	height: 100%;
+}
+.emailContainer section:nth-child(1) {
+    background: var(--mailBg);
+	background-position: center;
+	background-size: cover;
+	border-bottom-left-radius: 20px;
+	border-top-left-radius: 20px;
+}
+.emailContainer section:nth-child(2) {
+	border-bottom-right-radius: 20px;
+	border-top-right-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: #fff;
+}
+.emailForm form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+.emailForm form input {
+	width: 80%;
+	margin: 10px 0;
+	border-radius: 5px;
+	padding: 10px 15px;
+	outline: none;
+	border: 0;
+	box-shadow: 0 0 2px #fff;
+	/* box-shadow: rgba(0, 0, 0, 0.56) 0 22px 70px 4px; */
+	/* box-shadow: #fff 0px 20px 30px; */
+	background: transparent;
+	color: #ccc;
+}
+.emailForm form input::placeholder {
+	color: #ccc;
+}
+.emailForm form input:focus {
+	background: transparent;
+}
+.emailForm form input::selection {
+	color: aliceblue;
+}
+.emailForm form textarea {
+	width: 80%;
+	height: 40%;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	margin: 10px 0;
+	padding: 5px 15px;
+	box-shadow: 0 0 2px #fff;
+	color: #ccc;
+	background: transparent;
+	/* font-family: "Merienda"; */
+}
+.emailForm form textarea::placeholder {
+	/* font-family: "Merienda"; */
+	color: #ccc;
+}
+.emailForm form button {
+	width: 100px;
+	height: 5vh;
+	outline: none;
+	border: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-left: -60%;
+	margin-top: 10px;
+	box-shadow: 0 0 10px #555;
+	cursor: pointer;
+	border-radius: 0.3rem;
+	transition: all 0.9s ease;
+}
+.emailForm form button:hover {
+	background: var(--Ucolor);
+}
+button {
+	font-family: "Sofia" !important;
+}
+
+/* ================================Responsiveness========================= */
+@media screen and (max-width: 1010px) {
+	.emailForm form input,
+	.emailForm form textarea {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 910px) {
+	.emailContainer {
+		width: 95%;
+        height: 30rem;
+	}
+}
+
+@media screen and (max-width: 745px) {
+	.emailForm form input,
+	.emailForm form textarea {
+		width: 97%;
+	}
+	.emailForm form button {
+		margin-left: -65%;
+	}
+	section:nth-child(1) {
+		display: none;
+	}
+	section:nth-child(2) {
+		width: 96%;
+	}
+	.emailForm form button {
+		margin-left: -70%;
+	}
+	.emailForm form h4 {
+		margin-left: -50%;
+	}
+	.emailContainer {
+		width: 80%;
+		height: 70vh;
+		background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+			var(--mailBg);
+		background-position: center;
+		background-size: cover;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.emailContainer {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	form h4 {
+		transform: translateX(20%);
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.contactPage h3 {
+		width: 100%;
+		text-align: left;
+		font-size: 1.9rem;
+	}
+}
+
+@media screen and (max-width: 510px) {
+	.emailContainer {
+		width: 100%;
+		height: 75vh;
+	}
+	section:nth-child(2) {
+		width: 95%;
+	}
+	.emailForm form button {
+		width: 100px;
+		height: 40px;
+		margin-top: 30px;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.emailForm form h4 {
+		margin-left: -20%;
+	}
+	.emailForm form button {
+		margin-left: -64%;
+		width: auto;
+		height: auto;
+		padding: 0.5rem 1rem;
+	}
+
+	.contactPage {
+		height: auto !important;
+		margin: 15% 0;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.contactPage {
+		margin: 10% 0;
+		height: 600px !important;
+		margin: 0%;
+		padding: 0%;
+	}
+	.emailContainer {
+		height: 90vh;
+		margin: 0%;
+		padding: 0% 10px;
+	}
+	form h4 {
+		transform: translateX(5%);
+		font-size: 15px;
+	}
+	.emailForm form button {
+		font-size: 15px;
+		width: 90px;
+		height: 30px;
+		transform: translateX(30%);
+	}
+}

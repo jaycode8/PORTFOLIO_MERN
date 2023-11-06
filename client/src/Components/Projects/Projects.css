@@ -1,0 +1,142 @@
+.projectsContainer {
+	width: 100%;
+	height: auto;
+	background: var(--bgColor);
+	padding: 2.6rem 1rem 2rem;
+	text-align: center;
+}
+.projectsContainer h3 {
+	cursor: pointer;
+	font-size: 2rem;
+	color: var(--Ucolor);
+	background: var(--maskImage);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.projectCards {
+	width: 100%;
+	height: auto;
+	margin: 2rem 0;
+	display: grid;
+	place-items: center;
+	justify-content: center;
+	gap: 1.5rem;
+	grid-template-columns: repeat(auto-fit, minmax(3rem, 21rem));
+}
+.projectCards .project {
+	height: 30rem;
+	border-radius: 0.5rem;
+	background: var(--Cardbg);
+	color: var(--fontColor) !important;
+	display: grid;
+	grid-template-rows: 25% 75%;
+	box-shadow: 0 0 2px #808080;
+}
+.projectPhoto {
+	width: 100%;
+	height: 8rem;
+	overflow: hidden;
+}
+.projectPhoto img {
+	width: 100%;
+	border-radius: 0.5rem 0.5rem 0 0;
+}
+.proDescription {
+	padding-top: 0.5rem;
+	padding-inline: 1rem;
+	text-align: start;
+	position: relative;
+}
+.proDescription h4 {
+	padding: 1rem 0 0rem 0;
+	font-size: 1.1rem;
+	text-decoration: underline;
+}
+.proDescription h5 {
+	margin: 0.5rem 0 1rem 0;
+	font-size: 1rem;
+	font-weight: unset;
+}
+.proDescription .techLIst .lang-badge {
+	display: inline-block;
+	color: #fff;
+	padding: 0.1rem 0.5rem;
+	background: #555;
+	border-radius: 0.1rem;
+	font-size: 0.8rem;
+	margin: 0.3rem;
+	cursor: pointer;
+}
+.langContainer span,
+.onError span,
+.projectCards span,
+.swiper span {
+	width: 100%;
+	height: auto;
+	color: red;
+	display: grid;
+	place-items: center;
+}
+.proDescription span {
+	width: unset;
+	position: absolute;
+	bottom: 1.2rem;
+	display: unset;
+	place-items: unset;
+}
+span .button {
+	text-decoration: none;
+	padding: 0.5rem 1.2rem;
+	border: none;
+	background: transparent;
+	border-radius: 0.2rem;
+	outline: 0.1rem solid #fff;
+	color: #fff;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+span .button:nth-child(1) {
+	margin-right: 1rem;
+	background: #2ad883;
+	outline: 0;
+	color: #121212;
+}
+span .button:hover {
+	background: #2ad883;
+	outline: 0;
+	color: #121212;
+}
+
+@media screen and (max-width: 600px) {
+	.projectsContainer h3 {
+		width: 100%;
+		text-align: left;
+		font-size: 1.9rem;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.projectCards {
+		gap: 2.5rem;
+	}
+	.proDescription {
+		padding: 0.1rem 0.7rem;
+		margin-top: 2rem;
+	}
+	.proDescription h4 {
+		padding: 0.5rem 0;
+	}
+	.projectCards .project {
+		height: 33rem;
+		width: 19.5rem;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	span .button {
+		padding: 0.3rem 1rem;
+	}
+	.proDescription {
+		margin-top: unset;
+	}
+}
