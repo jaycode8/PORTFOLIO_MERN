@@ -55,7 +55,9 @@
   place-items: center;
   cursor: pointer;
   overflow: hidden;
-  border: 1px solid var(--Ucolor);
+  box-shadow: 0 0 10px var(--Ucolor);
+  border-radius: 0.3rem;
+  border-bottom-right-radius: unset;
 }
 .box-box2 img {
   width: 100%;
@@ -142,7 +144,7 @@ button .download-icon {
   .aboutMe {
     grid-template-columns: unset;
     grid-template-rows: 1fr 1fr;
-        padding: unset;
+    padding: unset;
   }
   .myImg {
     padding-top: 8rem !important;
