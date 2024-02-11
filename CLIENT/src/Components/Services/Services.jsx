@@ -13,11 +13,7 @@ const Services = () => {
             const res = await axios.get(`${api_url}/services`);
             setServices(res.data.message);
         } catch (error) {
-            document.querySelector(".cards").innerHTML = `
-            <span>
-                <p>Error loading services from server...</p>
-            </span>
-        `;
+            console.log("")
         }
     };
 

@@ -13,21 +13,17 @@ const Education = () => {
             const res = await axios.get(`${api_url}/institutions`);
             setInstitutions(res.data.message);
         } catch (error) {
-            document.querySelector(".education-container").innerHTML = `
-            <span>
-                <p>Error loading institutions from server...</p>
-            </span>
-        `;
+            console.log("");
         }
     };
 
     useEffect(() => {
         fetchInstitutions();
-    }, []);
+    }, [institutions]);
+
     const sortedInstitutions = [...institutions].sort(
         (a, b) => new Date(b.createdAt) - new Date(a.createdAt),
     );
-    console.log(sortedInstitutions);
 
     return (
         <div className="Education" id="education">

@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
-import swal from "sweetalert";
+import Swal from "sweetalert2";
 
 const Contact = () => {
     let [values, setValues] = useState({
@@ -56,29 +56,35 @@ const Contact = () => {
     };
 
     const onSuccess = () => {
-        swal({
+        Swal.fire({
             title: "Success",
             text: "Thanks for contacting JayTech, message successfully sent. Yo will receive a confirmation message shortly......",
             icon: "success",
             button: "OK",
+            background: "#20272f",
+            color: "#cbdaf7"
         });
     };
 
     const onError = () => {
-        swal({
+        Swal.fire({
             title: "Ooops....",
             text: "Someting went wrong. Check your connection....",
             icon: "warning",
             button: "OK",
+            background: "#20272f",
+            color: "#cbdaf7"
         });
     };
 
     const onInputError = () => {
-        swal({
+        Swal.fire({
             title: "Ooops....",
-            text: "All fields are required..",
-            icon: "error",
+            text: "All fields are required.",
+            icon: "question",
             button: "OK",
+            background: "#20272f",
+            color: "#cbdaf7"
         });
     };
 

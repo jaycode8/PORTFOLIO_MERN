@@ -1,127 +1,125 @@
 .landing {
-  width: 100%;
-  height: 100vh;
-  display: grid;
-  place-items: center;
-  grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 100vh;
+    background: url("../../resources/images/landing.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #12121299;
+    background-blend-mode: darken;
 }
+
 .landing .my-text {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  place-items: center;
-  justify-content: end;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    justify-content: start;
+    padding-left: 5rem;
 }
+
 .my-text div {
-  display: grid;
-  gap: 1rem;
-  color: #fff;
+    display: grid;
+    gap: 1rem;
+    color: #fff;
 }
+
 .my-text div h1 {
-  font-size: 3.5rem;
-  color: var(--Ucolor);
+    font-size: 3.5rem;
+    color: var(--Ucolor);
     font-family: "Borsok";
     font-weight: unset !important;
     white-space: nowrap;
 }
+
 .my-text div p,
 .my-text div h4 {
-  font-size: 1.6rem;
+    font-size: 1.6rem;
 }
+
 .my-text div h4 span {
-  color: var(--Ucolor);
-  font-weight: lighter !important;
+    color: var(--Ucolor);
+    font-weight: lighter !important;
     font-family: "Borsok";
 }
+
 .my-text div a {
-  margin-top: 2rem;
-  width: 10rem;
-  text-align: center;
-  padding: 0.5rem;
-  border-radius: 5rem;
-  color: #fff;
-  outline: 1px solid var(--Ucolor);
-  transition: all 0.5s ease;
+    margin-top: 2rem;
+    width: 10rem;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 5rem;
+    color: #fff;
+    outline: 1px solid var(--Ucolor);
+    transition: all 0.5s ease;
 }
+
 .my-text div a:hover {
-  color: #121212;
-  background: var(--Ucolor);
-  outline: none;
+    color: #121212;
+    background: var(--Ucolor);
+    outline: none;
 }
-.landing .my-pic {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  align-items: end;
-}
-.landing .my-pic img {
-  width: 60%;
-  cursor: pointer;
-}
+
 
 @media screen and (max-width: 1000px) {
-  .landing {
-    grid-template-columns: 60% 40%;
-    background: url("../../resources/images/jay.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #12121299;
-    background-blend-mode: darken;
-  }
-  .landing .my-pic {
-    align-items: center;
-    display: none;
-  }
-  .landing .my-text {
-    justify-content: center;
-  }
-  .landing .my-text div {
-    padding-left: 1rem;
-  }
-  .landing .my-pic img {
-    width: 100%;
-  }
+    .landing {
+        background-position: bottom;
+    }
+
+    .landing .my-text div {
+        padding-left: 1rem;
+    }
+
 }
 
-@media screen and (max-width: 500px) {
-  .landing {
-    grid-template-columns: unset;
-    position: relative;
-  }
-  .landing .my-text {
-    justify-content: left;
-    z-index: 10;
-  }
-  .landing .my-text div {
-    width: 100%;
-    padding-inline: 1rem;
-  }
-  .landing .my-pic {
-    position: absolute;
-    top: 0;
-  }
-  .landing .my-pic img {
-    width: 100%;
-  }
-  .my-text div h1 {
-    font-size: 2.5rem;
-  }
-  .my-text div a {
-    background: var(--Ucolor);
-    color: #121212;
-    outline: 0;
-    padding: 0.7rem;
-  }
-}
-
-@media screen and (max-width:400px){
-    .my-text div h1 {
-        font-size: 2rem;
+@media screen and (max-width: 800px) {
+    .landing .my-text {
+        padding-left: 1rem;
     }
 }
 
-@media screen and (max-width: 350px){
-    .landing .my-text div{
+@media screen and (max-width: 500px) {
+    .landing {
+        position: relative;
+        background: url("../../resources/images/landing2.jpg");
+        background-size: cover;
+        background-color: #12121299;
+        background-blend-mode: darken;
+    }
+
+    .landing .my-text {
+        justify-content: left;
+        z-index: 10;
+    }
+
+    .landing .my-text div {
+        width: 100%;
+        padding-inline: 1rem;
+    }
+
+    .my-text div h1 {
+        font-size: 2.5rem;
+    }
+
+    .my-text div a {
+        background: var(--Ucolor);
+        color: #121212;
+        outline: 0;
+        padding: 0.7rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .my-text div h1 {
+        font-size: 2rem;
+    }
+
+    .landing .my-text {
+        padding-left: .2rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .landing .my-text div {
         padding-inline: .3rem;
     }
 }

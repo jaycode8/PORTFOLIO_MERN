@@ -1,92 +1,101 @@
 .servicescontainer {
-  width: 100%;
-  padding: 3rem 1rem 1rem 1rem;
-  display: grid;
-  place-items: center;
+    width: 100%;
+    padding: 3rem 1rem 1rem 1rem;
+    display: grid;
+    place-items: center;
 }
+
 .servicescontainer h3 {
-  font-size: 2rem;
-  color: #fff;
+    font-size: 2rem;
+    color: #fff;
 }
+
 .servicescontainer .cards {
-  margin-top: 1rem;
-  width: 100%;
-  height: 100%;
-  display: grid;
-  place-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 17rem));
-  gap: 1.5rem;
-  justify-content: center;
-  padding: 2rem 10rem;
+    margin-top: 1rem;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 17rem));
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 2rem 10rem;
 }
+
 .servicescontainer .cards .card {
-  /* width: 17rem; */
-  height: 14rem;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 3rem;
-  border-radius: 0.5rem;
-  background: var(--Cardbg);
-  color: #ccc;
-  cursor: pointer;
-  transition: all 0.5s ease;
+    height: 14rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    border-radius: 0.5rem;
+    background: var(--Cardbg);
+    color: #ccc;
+    cursor: pointer;
+    transition: all 0.5s ease;
 }
+
 .servicescontainer .cards .card:hover {
-  transform: translateY(-1rem);
-  background: var(--Ucolor);
-  color: #121212;
+    transform: translateY(-1rem);
+    background: var(--Ucolor);
+    color: #121212;
 }
+
 .servicescontainer .cards .card span {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-right: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 4rem;
 }
+
 .card span .service-icon {
-  font-size: 2.5rem;
+    font-size: 2.5rem;
     width: 2.5rem;
-  transition: all 0.5s ease;
-  color: var(--Ucolor);
+    transition: all 0.5s ease;
+    color: var(--Ucolor);
 }
+
 .servicescontainer .cards .card:hover .service-icon {
-  color: #fff;
+    color: #fff;
 }
+
 .servicescontainer .cards .card div {
-  display: grid;
-  gap: 0.5rem;
+    display: grid;
+    gap: 0.5rem;
 }
+
 .servicescontainer .cards .card div h4 {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
-.servicescontainer .cards .card h1{
+
+.servicescontainer .cards .card h1 {
     font-family: var(--numbersText);
-}
-.servicescontainer .cards span p{
-    color: red;
 }
 
 @media screen and (max-width: 1000px) {
-  .servicescontainer .cards {
-    padding: 2rem 0;
-    gap: 0.5rem;
-  }
+    .servicescontainer .cards {
+        padding: 2rem 0;
+        gap: 0.5rem;
+    }
 }
 
 @media screen and (max-width: 500px) {
-  .servicescontainer .cards .card {
-    width: 20rem;
-  }
-  .servicescontainer .cards {
-    gap: 1.5rem;
-  }
-  .servicescontainer h3 {
-    width: 100%;
-    text-align: left;
-    font-size: 1.9rem;
-  }
-  .servicescontainer .cards .card:hover {
-    transform: translateY(-0.5rem);
-  }
+    .servicescontainer .cards .card {
+        width: 20rem;
+    }
+
+    .servicescontainer .cards {
+        gap: 1.5rem;
+    }
+
+    .servicescontainer h3 {
+        width: 100%;
+        text-align: left;
+        font-size: 1.9rem;
+    }
+
+    .servicescontainer .cards .card:hover {
+        transform: translateY(-0.5rem);
+    }
 }
