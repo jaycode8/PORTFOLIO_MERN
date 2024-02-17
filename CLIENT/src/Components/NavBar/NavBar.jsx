@@ -1,6 +1,6 @@
 import './NavBar.css';
-import { RxCrosshair2 } from 'react-icons/rx';
 import { HiBars3BottomRight } from "react-icons/hi2"
+import { BiCross } from "react-icons/bi";
 
 const NavBar = () => {
     const menuToggle = () => {
@@ -20,7 +20,7 @@ const NavBar = () => {
                     <a href="#projectsPage" onClick={menuToggle}><li>Projects</li></a>
                     <a href="#contacts" onClick={menuToggle}><li>Contact</li></a>
                 </ul>
-                <RxCrosshair2 id='cancel' onClick={menuToggle} />
+                <BiCross id='cancel' onClick={menuToggle} />
             </nav>
             <HiBars3BottomRight id='bars' onClick={menuToggle} />
         </div>

@@ -101,6 +101,7 @@ ul a li:hover {
     }
 
     #cancel {
+        transform: rotate(45deg);
         position: absolute;
         right: 1rem;
         top: .5rem;

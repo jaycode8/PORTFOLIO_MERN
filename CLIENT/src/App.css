@@ -1,74 +1,98 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Lobster+Two:ital@1&family=Righteous&family=Roboto&display=swap');
 @import url("https://fonts.cdnfonts.com/css/borsok");
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-  --Ucolor: #2ad883;
-  --Cardbg: #171c22;
-  --bgColor: #202725;
-  --aboutBg: #20272f;
-  --fontColor: #808080;
-  --textFont: "box";
-  --logoText: "Righteous";
+    --Ucolor: #2ad883;
+    --Cardbg: #171c22;
+    --bgColor: #202725;
+    --aboutBg: #20272f;
+    --fontColor: #808080;
+    --textFont: "box";
+    --logoText: "Righteous";
     --numbersText: "cookie";
 }
+
+.inputs {
+    @apply w-full my-2 p-1 px-2 outline-none border-none bg-transparent text-shades shadow-custom focus:shadow-none focus:outline-1 focus:outline-primary
+}
+
+.textarea {
+    @apply h-60 resize-none
+}
+
+.social-icons {
+    @apply w-9 phones:w-10 h-9 phones:h-10 rounded-round grid place-items-center text-primary border-2 border-primary hover:bg-primary hover:text-white transition duration-200
+}
+
+
 * {
-  font-family: "Roboto", monospace;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    font-family: "Roboto", monospace;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
 .main {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  overflow: auto;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-  background: var(--bgColor);
-  overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    background: var(--bgColor);
+    overflow-x: hidden;
 }
+
 ::-webkit-scrollbar {
-  width: 0.3rem;
+    width: 0.3rem;
 }
+
 ::-webkit-scrollbar-track {
-  background: var(--Cardbg);
+    background: var(--Cardbg);
 }
+
 ::-webkit-scrollbar-thumb {
-  background: var(--Ucolor);
-  border-radius: 2rem;
+    background: var(--Ucolor);
+    border-radius: 2rem;
 }
 
 .moveUp {
-  text-decoration: none;
-  width: 40px !important;
-  aspect-ratio: 1;
-  border: 1px solid var(--Ucolor);
-  color: #fff !important;
-  background: transparent;
-  position: sticky;
-  top: 75%;
-  left: 98%;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  justify-content: center;
+    text-decoration: none;
+    width: 40px !important;
+    aspect-ratio: 1;
+    border: 1px solid var(--Ucolor);
+    color: #fff !important;
+    background: transparent;
+    position: sticky;
+    top: 75%;
+    left: 98%;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    justify-content: center;
 }
+
 .moveUp .arrowUp {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 @media screen and (max-width: 500px) {
-  ::-webkit-scrollbar {
-    width: 0.2rem;
-  }
-  .moveUp {
-    width: 30px !important;
-    left: 94% !important;
-    top: 80% !important;
-    z-index: 100;
-  }
-  .moveUp .arrowUp {
-    font-size: 1.2rem;
-  }
+    ::-webkit-scrollbar {
+        width: 0.2rem;
+    }
+
+    .moveUp {
+        width: 30px !important;
+        left: 94% !important;
+        top: 80% !important;
+        z-index: 100;
+    }
+
+    .moveUp .arrowUp {
+        font-size: 1.2rem;
+    }
 }
