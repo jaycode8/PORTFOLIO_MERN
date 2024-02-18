@@ -40,10 +40,12 @@ export default {
                 "30rem": "30rem"
             },
             gridTemplateColumns: {
-                "1fr1.5fr": "1fr 1.5fr"
+                "1fr1.5fr": "1fr 1.5fr",
+                "services-grid": "repeat(auto-fit, minmax(15rem, 17rem))"
             },
             fontFamily: {
-                borsok: ["borsok"]
+                borsok: ["borsok"],
+                cookie: ["cookie"]
             },
             borderWidth: {
                 "1": "1px"

@@ -1,5 +1,5 @@
 import { BsCloudDownload } from "react-icons/bs";
-import jay from "../../resources/images/jay.png";
+import jay from "../resources/images/jay.png";
 
 const About = () => {
     return (
@@ -14,14 +14,16 @@ const About = () => {
                 </div>
             </div>
             <div className="grid place-items-start content-center">
-                <div className="w-full sm:w-4/5 lg:w-[70%]">
+                <div className="w-full sm:w-[90%] lg:w-4/5">
                     <h3 className="text-2 sm:text-[2.5rem] text-white mb-4 absolute top-12 sm:top-0 sm:relative">About me</h3>
                     <p className="text-[#808080] my-4 leading-8 pt-8 sm:pt-0">
-                        My name is James Mumo. I'm a freelancer based in Nairobi, Kenya and
-                        am passionate and dedicated to my work. I have a strong foundation
-                        in JavaScript, Python, and REST API's. I do work with both SQL and
-                        NoSQL databases. Im ready to bussiness talks of any kind based on
-                        tech. I look forward to working with you...
+                        Meet James Mumo, a skilled developer with strong foundation in Python and JavaScript, along
+                        with their respective libraries. Proficient in both SQL and NoSQL, James brings a versitile
+                        skill set to the table. His expertise extends to crafting dynamic and responsive frontend
+                        experiences using HTML, CSS, Vanilla JS and JSX. With keen understanding of REST APIs, James
+                        is not just a coder, he's a problem solver, ready to create innovative solutions for your projects.
+                        Elevate your digital experience with James Mumo's passion for clean, efficient and impactful
+                        development.
                     </p>
                     <div className="flex gap-4 my-5">
                         <a href="#contacts">
