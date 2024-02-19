@@ -30,7 +30,7 @@ const About = () => {
                             <button className="w-36 h-10 text-center text-[#121212] bg-primary">Hire me</button>
                         </a>
                         <a href="resume.pdf" download="james_mumo_resume">
-                            <button className="w-36 h-10 flex place-items-center justify-center gap-3 outline-none border-1 border-[#808080] transition duration-200 hover:bg-primary hover:text-[#121212] hover:border-0">
+                            <button className="w-36 h-10 flex place-items-center justify-center gap-3 outline-none border-1 border-[#808080] transition-all duration-200 hover:bg-primary text-shades hover:text-[#121212] hover:border-0">
                                 CV
                                 <BsCloudDownload />
                             </button>

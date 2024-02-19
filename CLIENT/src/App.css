@@ -28,6 +28,9 @@
     @apply w-9 phones:w-10 h-9 phones:h-10 rounded-round grid place-items-center text-primary border-2 border-primary hover:bg-primary hover:text-white transition duration-200
 }
 
+.headerlink {
+    @apply text-[1.3rem] md:text-[1rem] uppercase transition duration-200 ease-out hover:text-primary
+}
 
 * {
     font-family: "Roboto", monospace;

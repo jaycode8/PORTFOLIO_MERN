@@ -45,7 +45,8 @@ export default {
             },
             fontFamily: {
                 borsok: ["borsok"],
-                cookie: ["cookie"]
+                cookie: ["cookie"],
+                righteous: ["Righteous"]
             },
             borderWidth: {
                 "1": "1px"
