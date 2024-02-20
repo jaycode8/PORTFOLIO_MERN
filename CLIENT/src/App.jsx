@@ -4,23 +4,23 @@ import About from "./Components/About";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import Projects from "./Components/Projects";
-import ProLang from "./Components/Languages/ProLang";
+import ProLang from "./Components/ProLang";
 import Education from "./Components/Education";
 import Services from "./Components/Services";
-import { AiOutlineArrowUp } from "react-icons/ai";
 import Landing from "./Components/Landing";
+import { BsArrowUpSquare } from "react-icons/bs";
 
 const App = () => {
     return (
-        <div className="container-fluid main">
+        <div className="w-screen h-screen bg-bgColor relative overflow-auto overflow-x-hidden snap-mandatory scroll-smooth">
             <div className="row">
                 <NavBar />
                 <Landing />
                 <About />
                 <Education />
                 <Services />
-                <a href="#homePage" className="moveUp">
-                    <AiOutlineArrowUp className="arrowUp" />
+                <a href="#home" className="z-30 sticky top-3/4 left-[98%] text-white w-8 text-[1.5rem] grid place-items-end pr-2 sm:pr-4">
+                    <BsArrowUpSquare />
                 </a>
                 <ProLang />
                 <Projects />

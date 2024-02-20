@@ -43,10 +43,26 @@ export default {
             gridTemplateColumns: {
                 "1fr1.5fr": "1fr 1.5fr",
                 "services-grid": "repeat(auto-fit, minmax(15rem, 17rem))",
-                "projects-grid": "repeat(auto-fit, minmax(3rem, 21rem))"
+                "projects-grid": "repeat(auto-fit, minmax(3rem, 21rem))",
+                "skills-grid": "repeat(auto-fit, minmax(8rem, 1fr))",
+                "skills-grid2": "repeat(auto-fit, minmax(6.2rem, 1fr))"
             },
             gridTemplateRows: {
                 "projects": "25% 75%"
+            },
+            keyframes: {
+                fadeIn: {
+                    '0%': {
+                        opacity: 0
+                    },
+
+                    '100%': {
+                        opacity: 1
+                    }
+                }
+            },
+            animation: {
+                fadeIn: "fadeIn 1s linear forwards;"
             },
             fontFamily: {
                 borsok: ["borsok"],

@@ -1,7 +1,7 @@
 
 const Landing = () => {
     return (
-        <div className="w-full h-screen bg-landing2 sm:bg-landing bg-darken bg-cover bg-no-repeat bg-blend-darken" id="homePage">
+        <div className="w-full h-screen bg-landing2 sm:bg-landing bg-darken bg-cover bg-no-repeat bg-blend-darken" id="home">
             <div className="w-full h-full grid place-items-center justify-start pl-1 phones:pl-4 md:pl-20">
                 <div className="grid text-white sm:gap-2 pl-1 phones:pl-4 lg:pl-0">
                     <p className="text-3xl phones:text-2xl pb-3 phones:pb-2">Hello.</p>

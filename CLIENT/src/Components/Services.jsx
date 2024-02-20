@@ -21,7 +21,7 @@ const Services = () => {
     }, []);
 
     return (
-        <div className="w-full grid place-items-center pt-12 pb-4 px-4" id="servicePage">
+        <div className="w-full grid place-items-center pt-12 pb-4 px-4" id="services">
             <h3 className="text-white text-2 w-full sm:text-center">Services</h3>
             <div className="w-full h-full mt-4 grid place-items-center justify-center grid-cols-services-grid gap-6 sm:gap-2 lg:gap-6 py-8 px-0 lg:px-40">
                 {services.map((service, index) => (

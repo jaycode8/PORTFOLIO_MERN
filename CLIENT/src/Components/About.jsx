@@ -3,7 +3,7 @@ import jay from "../resources/images/jay.png";
 
 const About = () => {
     return (
-        <div className="w-full bg-about sm:grid grid-cols-2 overflow-hidden pt-20 sm:pt-12 sm:pb-16 px-4 sm:px-0 relative" id="aboutPage">
+        <div className="w-full bg-about sm:grid grid-cols-2 overflow-hidden pt-20 sm:pt-12 sm:pb-16 px-4 sm:px-0 relative" id="about">
             <div className="grid place-items-center content-center relative pt-10 sm:pt-0">
                 <div className="w-64 phones:w-80 h-64 phones:h-80 relative">
                     <div className="w-[30%] h-[45%] absolute mt-[-1rem] phones:mt-[-1.5rem] ml-[-1rem] phones:ml-[-1.5rem] border-t-2 border-l-2 border-primary rounded-ss-2xl"></div>

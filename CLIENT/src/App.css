@@ -5,15 +5,11 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    --Ucolor: #2ad883;
-    --Cardbg: #171c22;
-    --bgColor: #202725;
-    --aboutBg: #20272f;
-    --fontColor: #808080;
-    --textFont: "box";
-    --logoText: "Righteous";
-    --numbersText: "cookie";
+* {
+    font-family: "Roboto", monospace;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .inputs {
@@ -32,22 +28,41 @@
     @apply text-[1.3rem] md:text-[1rem] uppercase transition duration-200 ease-out hover:text-primary
 }
 
-* {
-    font-family: "Roboto", monospace;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+.circularBar:hover {
+    box-shadow:
+        0 0 5px var(--clr),
+        0 0 80px var(--clr);
 }
 
-.main {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    overflow: auto;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-    background: var(--bgColor);
-    overflow-x: hidden;
+.percent svg circle:nth-child(2) {
+    stroke: var(--clr);
+    animation-delay: 2s;
+}
+
+.dot {
+    animation: animdot 2s linear forwards;
+}
+
+.number {
+    animation-delay: 2s;
+}
+
+@keyframes animdot {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(calc(3.6deg * var(--num)));
+    }
+}
+
+.dot::before {
+    content: "";
+    background: var(--clr);
+    box-shadow:
+        0 0 10px var(--clr),
+        0 0 30px var(--clr);
 }
 
 ::-webkit-scrollbar {
@@ -63,39 +78,8 @@
     border-radius: 2rem;
 }
 
-.moveUp {
-    text-decoration: none;
-    width: 40px !important;
-    aspect-ratio: 1;
-    border: 1px solid var(--Ucolor);
-    color: #fff !important;
-    background: transparent;
-    position: sticky;
-    top: 75%;
-    left: 98%;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    justify-content: center;
-}
-
-.moveUp .arrowUp {
-    font-size: 1.5rem;
-}
-
 @media screen and (max-width: 500px) {
     ::-webkit-scrollbar {
         width: 0.2rem;
-    }
-
-    .moveUp {
-        width: 30px !important;
-        left: 94% !important;
-        top: 80% !important;
-        z-index: 100;
-    }
-
-    .moveUp .arrowUp {
-        font-size: 1.2rem;
     }
 }

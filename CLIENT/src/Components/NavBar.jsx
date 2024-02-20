@@ -10,15 +10,7 @@ const NavBar = () => {
     }
     const isOpen = nav ? "right-0" : "right-[-80%]"
 
-    const links = [
-        { link: "#homePage", name: "Home" },
-        { link: "#aboutPage", name: "About" },
-        { link: "#education", name: "Education" },
-        { link: "#servicePage", name: "Services" },
-        { link: "#skills", name: "Skills" },
-        { link: "#projectsPage", name: "Projects" },
-        { link: "#contacts", name: "Contacts" }
-    ]
+    const links = ["home", "about", "education", "services", "skills", "projects", "contacts"];
 
     return (
         <div className="w-full h-12 fixed top-[-1px] flex justify-between items-center py-4 px-4 lg:px-20 bg-about text-[#d6d8e6] z-50">
@@ -27,13 +19,13 @@ const NavBar = () => {
                 <ul className="relative grid gap-4 lg:gap-8 grid-flow-row md:grid-flow-col list-none">
                     {
                         links.map((li, index) => (
-                            <a href={`${li.link}`} onClick={menuToggle} className="headerlink" key={index}><li>{li.name}</li></a>
+                            <a href={`#${li}`} onClick={menuToggle} className="headerlink" key={index}><li>{li}</li></a>
                         ))
                     }
                 </ul>
-                <BiCross onClick={menuToggle} className="block absolute top-4 right-4 text-[1.8rem] rotate-45 md:hidden" />
+                <BiCross onClick={menuToggle} className="block cursor-pointer absolute top-4 right-4 text-[1.8rem] rotate-45 md:hidden" />
             </nav>
-            <HiBars3BottomRight onClick={menuToggle} className="block text-[1.8rem] md:hidden" />
+            <HiBars3BottomRight onClick={menuToggle} className="block cursor-pointer text-[1.8rem] md:hidden" />
         </div >
     );
 };

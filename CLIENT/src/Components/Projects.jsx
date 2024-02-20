@@ -24,7 +24,7 @@ const Projects = () => {
     );
 
     return (
-        <div className="w-full h-auto pt-[2.6rem] px-4 pb-8" id="projectsPage">
+        <div className="w-full h-auto pt-[2.6rem] px-4 pb-8" id="projects">
             <h3 className="text-2 text-white w-full sm:text-center">Projects</h3>
             <div className="w-full h-auto my-8 grid place-items-center justify-center gap-9 sm:gap-6 grid-cols-projects-grid">
                 {sortedProjects.map((project, i) => (
