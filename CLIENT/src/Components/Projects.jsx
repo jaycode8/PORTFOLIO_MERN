@@ -28,9 +28,9 @@ const Projects = () => {
             <h3 className="text-2 text-white w-full sm:text-center">Projects</h3>
             <div className="w-full h-auto my-8 grid place-items-center justify-center gap-9 sm:gap-6 grid-cols-projects-grid">
                 {sortedProjects.map((project, i) => (
-                    <div className="h-[30rem] w-full text-[#808080] rounded-lg bg-[#171c22] grid grid-rows-projects shadow-md shadow-[#808080]" key={project._id}>
+                    <div className="h-[30rem] w-[90%] sm:w-full text-[#808080] rounded-lg bg-[#171c22] grid grid-rows-projects shadow-custom3" key={project._id}>
                         <div className="w-full h-36 overflow-hidden">
-                            <img src={project.bgImg.imgUrl} alt={project.projectName} className="w-full rounded-lg" />
+                            <img src={project.bgImg.imgUrl} alt={project.projectName} className="w-full rounded-t-lg" />
                         </div>
                         <div className="relative pt-2 px-[0.7rem] sm:px-4 text-start">
                             <h4 className="text-[1.1rem] pt-8">

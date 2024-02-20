@@ -24,7 +24,8 @@ export default {
             },
             boxShadow: {
                 "custom": "0 0 2px #fff",
-                "custom2": "0 0 5px #2ad883"
+                "custom2": "0 0 5px #2ad883",
+                "custom3": "0 0 0.2rem #fff"
             },
             fontSize: {
                 "tiny": "0.8rem",
