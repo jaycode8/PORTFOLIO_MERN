@@ -3,7 +3,7 @@ import NavBar from "./Components/NavBar";
 import About from "./Components/About";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
-import Projects from "./Components/Projects/Projects";
+import Projects from "./Components/Projects";
 import ProLang from "./Components/Languages/ProLang";
 import Education from "./Components/Education/Education";
 import Services from "./Components/Services";

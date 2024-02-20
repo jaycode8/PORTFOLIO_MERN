@@ -41,7 +41,11 @@ export default {
             },
             gridTemplateColumns: {
                 "1fr1.5fr": "1fr 1.5fr",
-                "services-grid": "repeat(auto-fit, minmax(15rem, 17rem))"
+                "services-grid": "repeat(auto-fit, minmax(15rem, 17rem))",
+                "projects-grid": "repeat(auto-fit, minmax(3rem, 21rem))"
+            },
+            gridTemplateRows: {
+                "projects": "25% 75%"
             },
             fontFamily: {
                 borsok: ["borsok"],

@@ -1,7 +1,6 @@
 import { HiBars3BottomRight } from "react-icons/hi2"
 import { BiCross } from "react-icons/bi";
 import { useState } from "react";
-import { document } from "postcss";
 
 const NavBar = () => {
     const [nav, setNav] = useState(false);
